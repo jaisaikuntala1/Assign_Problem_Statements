@@ -16,7 +16,7 @@ require 'common.php';
         $row = mysqli_fetch_array($result);
         $total_rows_fetched = mysqli_num_rows($result);
         if($total_rows_fetched >0){
-            echo 'This team already opted their problem statement.';
+            echo '<h2>This team has already opted their problem statement.</h2>';
             session_unset();
             session_destroy();
         }
