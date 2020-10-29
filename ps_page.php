@@ -2,7 +2,7 @@
 <?php
 require 'common.php';
 if(isset($_SESSION['t_id'])){
-    header('location:prob_stat.php')
+    header('location:prob_stat.php');
 }
 ?>
 <html>
