@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect('remotemysql.com','mVi7q2eMp4','EBhy6Qld9F','mVi7q2eMp4')or die(mysqli_error($con));
+require 'common.php';
 if(!isset($_SESSION['t_id'])){header('location:index.php');}
 ?>
 
