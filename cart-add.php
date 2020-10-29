@@ -16,8 +16,10 @@ $total_rows_fetched = mysqli_num_rows($enquire_query_result);
 if($total_rows_fetched>0){
     header('location : prob_stat.php');
 }
+else{
 $insert_query_result = mysqli_query($con,$insert_query) or die(mysqli_error($con));
 echo '<h3>The Problem Statement assigned to you is :</h3>'.$ps_id;
 session_unset();
 session_destroy();
+}
 ?>
