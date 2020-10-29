@@ -1,6 +1,9 @@
 
 <?php
 require 'common.php';
+if(isset($_SESSION['t_id'])){
+    header('location:prob_stat.php')
+}
 ?>
 <html>
     <head>
@@ -21,7 +24,7 @@ require 'common.php';
             session_destroy();
         }
         else{
-           header("Location:prob_stat.php");
+           header("location:prob_stat.php");
             
             
         }
